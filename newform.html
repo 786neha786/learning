@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+  <script type="text/javascript" src="new11.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<style>
+	
+
+
+.div  {background-color: pink;
+
+         background-repeat: no-repeat;
+         background-size: fixed;
+         border: 5px solid black;
+        
+         margin-bottom: 10px;
+         margin-top: 130px;
+         margin-left: 350px;
+         margin-right:  385px;
+         padding-bottom: 40px;
+         padding-top: 1px;
+      
+
+         padding-bottom: 30px;}
+
+          #one {color: black;
+          	font-size: 1.3vw;
+        	padding-left: 15px;}
+
+
+
+        	body {margin-top: 20px;
+
+        	}
+
+        	#submit {
+        		color: white;
+        		padding: 8px;
+        		cursor: pointer;
+        		background-color: black;
+        	}
+
+
+</style>
+ 
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#submit").click(function(){
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var pass = $("#password").val();
+
+				if(name.length == ""){
+					$("#p1").text("plz enter your name");
+					$("#name").focus();
+					return false;
+				}
+
+				else if(email.length == ""){
+					$("#p2").text("plz enter your email");
+					$("#email").focus();
+					return false;
+
+				}
+
+				else if(pass.length == ""){
+					$("#p3").text("plz enter your password");
+					$("#password").focus();
+					return false;
+
+				}
+			});
+		});
+		
+	</script> 
+</head>
+<body>
+ <div class="div">
+
+ 	<div id="one">
+<center>
+ 	<h2 style="color: black; font-size: 4vw; text-align: center;">Registration</h2>
+	<form id="registration" method="post">
+		<p style="margin: 5px;">Name</p><input type="text"  id="name"><p id="p1"></p>
+		<p style="margin: 5px;">Email</p><input type="email" id="email" name="email"><p id="p2"></p>
+		<p style="margin: 5px;">Password</p><input type="password" id="password" name="number"><p id="p3"></p><br>
+
+		<input type="submit" id="submit" value="submit" name="">
+
+	</center>
+	</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
